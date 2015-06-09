@@ -1,0 +1,48 @@
+<dom-module id="image-description">	
+	<link rel="import" href="bower_components/polymer/polymer.html">
+
+	<link rel="import" href="bower_components/iron-input/iron-input.html">
+
+	<style>
+	    div {
+	      display: inline-block;
+	      background-color: #ccc;
+	      border-radius: 8px;
+	      padding: 4px;
+	    }
+	    b {
+	    	color: red;
+	    }
+	</style>
+
+	<template>
+	    <div>
+	      <!-- any children are rendered here -->
+	      <content></content>
+	      Logo maked by <span><b>{{tino}}</b></span>
+	    </div>
+	    <br>
+	    <input is="iron-input" bind-value="{{tino}}" placeholder="Your name here...">
+	</template>
+</dom-module>
+
+
+<script>
+  // register a new element called proto-element
+  Polymer({
+    is: "image-description",
+
+    // add a callback to the element's prototype
+     // ready: function() {
+     //   this.tino = "Icarus Mota"
+     // }
+     properties: {
+      tino: {
+        type: String,
+        value: ""
+      }
+    }
+
+  });
+</script>
+

@@ -1,0 +1,20 @@
+{
+  "name": "polymer",
+  "version": "0.0.0",
+  "description": "aprender o polymer",
+  "main": "index.html",
+  "authors": [
+    "tino"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~1.0.3"
+  }
+}
